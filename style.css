@@ -1,11 +1,22 @@
 body{
-    margin: 0;
+    margin: 20px;
     padding: 0;
 }
 
 .scroll-snap{
     display: flex;
     width: 100vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+
+}
+
+.scroll-snap>*{
+    width: 100vw;
     flex: none;
     flex-shrink: 0;
+    scroll-snap-align: center;
 }
+
