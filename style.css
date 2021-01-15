@@ -3,9 +3,11 @@ body{
     padding: 0;
 }
 
+
+
 .scroll-snap{
     display: flex;
-    width: 100vw;
+    width: calc(100%-100px);
     overflow-x: scroll;
     overflow-y: hidden;
     scroll-behavior: smooth;
