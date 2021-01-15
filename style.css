@@ -21,4 +21,35 @@ body{
     flex-shrink: 0;
     scroll-snap-align: center;
 }
+#accordeon>details>summary>img{
+    width: 100px;
+}
+#accordeon>details>summary {
+    list-style-type: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
 
+summary::-webkit-details-marker{
+    display: none;
+}
+#accordeon{
+    display: flex;
+}
+
+details{
+    width: 150px;
+    position: relative;
+}
+
+details[open]{
+    width: 300px;
+    transition: width 500ms ease-out;
+}
+
+#accordeon>details>div{
+    padding-left: 130px;
+    width: calc(300px - 130px)
+
+}
